@@ -1,2 +1,2 @@
 # MyApplication
-A demo write while I learning android. 
+A demo written while I learning android. 
