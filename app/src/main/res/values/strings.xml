@@ -4,4 +4,5 @@
     <string name="tab_bar_control">Control</string>
     <string name="tab_bar_data">Data</string>
     <string name="tab_bar_network">Network</string>
+    <string name="tab_bar_item_placeholder">Item</string>
 </resources>

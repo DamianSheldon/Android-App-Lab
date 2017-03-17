@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TabHost;
+import android.widget.TextView;
 
 import java.util.HashMap;
 
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     HashMap<Integer, Integer> mResIdToLayoutIdMap = new HashMap<>();
     HashMap<Integer, Integer> mResIdToViewIdMap = new HashMap<>();
+    HashMap<Integer, Integer> mResIdToMenuDrawableId = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         mResIdToViewIdMap.put(R.string.tab_bar_control, R.id.control);
         mResIdToViewIdMap.put(R.string.tab_bar_data, R.id.data);
         mResIdToViewIdMap.put(R.string.tab_bar_network, R.id.network);
+
+        mResIdToMenuDrawableId.put(R.string.tab_bar_layout, android.R.drawable.ic_menu_add);
+        mResIdToMenuDrawableId.put(R.string.tab_bar_control, android.R.drawable.ic_menu_agenda);
+        mResIdToMenuDrawableId.put(R.string.tab_bar_data, android.R.drawable.ic_menu_call);
+        mResIdToMenuDrawableId.put(R.string.tab_bar_network, android.R.drawable.ic_menu_camera);
 
         // Set up tab host
         setUpTabHost();
@@ -54,7 +62,16 @@ public class MainActivity extends AppCompatActivity {
             TabHost.TabSpec tabSpec = tabHost.newTabSpec(getString(resId));
 
             tabSpec.setContent(mResIdToViewIdMap.get(resId));
-            tabSpec.setIndicator(getString(resId));
+
+            View tabBarItem = LayoutInflater.from(this).inflate(R.layout.tab_bar_item, null);
+            TextView textView = (TextView) tabBarItem.findViewById(R.id.item_text_view);
+            textView.setText(getString(resId));
+
+            ImageView imageView = (ImageView) tabBarItem.findViewById(R.id.item_image_view);
+            imageView.setImageResource(mResIdToMenuDrawableId.get(resId));
+
+//            tabSpec.setIndicator(getString(resId));
+            tabSpec.setIndicator(tabBarItem);
             tabHost.addTab(tabSpec);
         }
 
