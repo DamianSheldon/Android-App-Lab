@@ -4,8 +4,10 @@
     android:layout_height="match_parent"
     android:id="@+id/layout">
 
-    <TextView
+    <ListView
+        android:id="@+id/layout_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tab_bar_layout"/>
+        android:layout_height="match_parent">
+
+    </ListView>
 </LinearLayout>

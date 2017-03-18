@@ -19,7 +19,8 @@
         <FrameLayout
             android:id="@android:id/tabcontent"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_above="@android:id/tabs">
 
             <include layout="@layout/fragment_layout" />
             <include layout="@layout/fragment_control" />
@@ -30,60 +31,3 @@
 
     </RelativeLayout>
 </TabHost>
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:id="@+id/activity_main"-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:paddingBottom="0dp"-->
-    <!--android:paddingLeft="0dp"-->
-    <!--android:paddingRight="0dp"-->
-    <!--android:paddingTop="0dp"-->
-    <!--tools:context="com.example.helloworld.MainActivity">-->
-    <!---->
-    <!--<fragment-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1"/>-->
-
-    <!--<LinearLayout-->
-        <!--android:id="@+id/tab_bar"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="@dimen/tab_bar_height"-->
-        <!--android:background="@android:color/white">-->
-        <!---->
-        <!--<Button-->
-            <!--android:id="@+id/layout"-->
-            <!--android:text="@string/tab_bar_layout"-->
-            <!--android:textColor="@color/button_text"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1" />-->
-
-        <!--<Button-->
-            <!--android:id="@+id/control"-->
-            <!--android:text="@string/tab_bar_control"-->
-            <!--android:textColor="@color/button_text"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"/>-->
-
-        <!--<Button-->
-            <!--android:id="@+id/data"-->
-            <!--android:text="@string/tab_bar_data"-->
-            <!--android:textColor="@color/button_text"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"/>-->
-
-        <!--<Button-->
-            <!--android:id="@+id/network"-->
-            <!--android:text="@string/tab_bar_network"-->
-            <!--android:textColor="@color/button_text"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"/>-->
-    <!--</LinearLayout>-->
-
-<!--</LinearLayout>-->
