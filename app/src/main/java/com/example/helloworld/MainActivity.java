@@ -1,10 +1,12 @@
 package com.example.helloworld;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -29,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private ListView mLayoutListView;
 
     // Android supported layouts: Linear Layout, Relative Layout, TableLayout, TableRow, FragmentLayout, ConstraintLayout, GridLayout
-    private String [] mLayoutStrings = {"Linear Layout XML", "Relative Layout XML", "TableLayout", "TableRow", "FragmentLayout", "ConstraintLayout", "GridLayout"};
+//    private String [] mLayoutStrings = {"Linear Layout XML", "Linear Layout Code", "Relative Layout XML", "TableLayout", "TableRow", "FragmentLayout", "ConstraintLayout", "GridLayout"};
+    private Layouts [] mLayouts = {Layouts.LinearLayoutXML, Layouts.LinearLayoutCode, Layouts.RelativeLayoutXML, Layouts.TableLayout, Layouts.TableRow, Layouts.FragmentLayout, Layouts.ConstraintLayout, Layouts.GridLayout};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,19 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up list views
         mLayoutListView = (ListView) findViewById(R.id.layout_list_view);
-        mLayoutListView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mLayoutStrings));
+        mLayoutListView.setAdapter(new ArrayAdapter<Layouts>(this, android.R.layout.simple_list_item_1, mLayouts));
+        mLayoutListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Class<?> cls = mLayouts[(int)id].mappedClass();
+
+                if (cls != null) {
+                    Intent intent = new Intent(MainActivity.this, cls);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     @Override
