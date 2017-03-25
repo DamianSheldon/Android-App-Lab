@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LinearLayoutXMLActivity"></activity>
+        <activity android:name=".LinearLayoutXMLActivity" />
+        <activity android:name=".LinearLayoutCodeActivity"></activity>
     </application>
 
 </manifest>
