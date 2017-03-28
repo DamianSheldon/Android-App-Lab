@@ -4,4 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="tab_bar_height">44dp</dimen>
     <dimen name="tab_bar_item_text_view_text_size">15dp</dimen>
+    
+    <dimen name="times_spinner_width">96dp</dimen>
+    <dimen name="done_button_width">96dp</dimen>
 </resources>

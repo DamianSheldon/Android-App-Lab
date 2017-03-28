@@ -7,8 +7,14 @@
     <string name="tab_bar_network">Network</string>
     <string name="tab_bar_item_placeholder">Item</string>
 
+    <!--Linear Layout-->
     <string name="to">To</string>
     <string name="subject">Subject</string>
     <string name="message">Message</string>
     <string name="send">Send</string>
+
+    <!--Relative Layout-->
+    <string name="reminder">Reminder Name</string>
+    <string name="done">Done</string>
+
 </resources>

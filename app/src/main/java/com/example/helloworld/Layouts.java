@@ -28,6 +28,9 @@ public enum Layouts {
             case LinearLayoutCode:
                 mappedClass = LinearLayoutCodeActivity.class;
                 break;
+            case RelativeLayoutXML:
+                mappedClass = RelativeLayoutXMLActivity.class;
+                break;
             default:
                 break;
         }
