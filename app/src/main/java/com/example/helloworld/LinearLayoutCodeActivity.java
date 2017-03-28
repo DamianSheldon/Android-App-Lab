@@ -42,7 +42,7 @@ public class LinearLayoutCodeActivity extends AppCompatActivity {
         LinearLayout.LayoutParams sendButtonParams = sendButtonParams();
 
         linearLayout.addView(sendButton, sendButtonParams);
-        
+
         setContentView(linearLayout);
     }
 
