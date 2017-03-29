@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Android supported layouts: Linear Layout, Relative Layout, TableLayout, TableRow, FragmentLayout, ConstraintLayout, GridLayout
 //    private String [] mLayoutStrings = {"Linear Layout XML", "Linear Layout Code", "Relative Layout XML", "TableLayout", "TableRow", "FragmentLayout", "ConstraintLayout", "GridLayout"};
-    private Layouts [] mLayouts = {Layouts.LinearLayoutXML, Layouts.LinearLayoutCode, Layouts.RelativeLayoutXML, Layouts.TableLayout, Layouts.TableRow, Layouts.FragmentLayout, Layouts.ConstraintLayout, Layouts.GridLayout};
+    private Layouts [] mLayouts = {Layouts.LinearLayoutXML, Layouts.LinearLayoutCode, Layouts.RelativeLayoutXML, Layouts.RelativeLayoutCode, Layouts.TableLayout, Layouts.TableRow, Layouts.FragmentLayout, Layouts.ConstraintLayout, Layouts.GridLayout};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

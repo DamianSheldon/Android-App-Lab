@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".LinearLayoutXMLActivity" />
         <activity android:name=".LinearLayoutCodeActivity" />
-        <activity android:name=".RelativeLayoutXMLActivity"></activity>
+        <activity android:name=".RelativeLayoutXMLActivity" />
+        <activity android:name=".RelativeLayoutCodeActivity"></activity>
     </application>
 
 </manifest>

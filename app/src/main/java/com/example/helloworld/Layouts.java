@@ -5,9 +5,7 @@ package com.example.helloworld;
  */
 
 public enum Layouts {
-    LinearLayoutXML(0), LinearLayoutCode(1), RelativeLayoutXML(2), TableLayout(3), TableRow(4), FragmentLayout(5), ConstraintLayout(6), GridLayout(7);
-
-    private String [] mLayoutStrings = {"Linear Layout XML", "Linear Layout Code", "Relative Layout XML", "TableLayout", "TableRow", "FragmentLayout", "ConstraintLayout", "GridLayout"};
+    LinearLayoutXML(0), LinearLayoutCode(1), RelativeLayoutXML(2), RelativeLayoutCode(3), TableLayout(4), TableRow(5), FragmentLayout(6), ConstraintLayout(7), GridLayout(8);
 
     Layouts(int index) {
 
@@ -30,6 +28,9 @@ public enum Layouts {
                 break;
             case RelativeLayoutXML:
                 mappedClass = RelativeLayoutXMLActivity.class;
+                break;
+            case RelativeLayoutCode:
+                mappedClass = RelativeLayoutCodeActivity.class;
                 break;
             default:
                 break;
