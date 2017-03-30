@@ -18,7 +18,8 @@
         <activity android:name=".LinearLayoutXMLActivity" />
         <activity android:name=".LinearLayoutCodeActivity" />
         <activity android:name=".RelativeLayoutXMLActivity" />
-        <activity android:name=".RelativeLayoutCodeActivity"></activity>
+        <activity android:name=".RelativeLayoutCodeActivity" />
+        <activity android:name=".TableLayoutActivity"></activity>
     </application>
 
 </manifest>

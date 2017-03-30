@@ -17,4 +17,11 @@
     <string name="reminder">Reminder Name</string>
     <string name="done">Done</string>
 
+    <!--Table Layout-->
+    <string name="product_id">Product ID</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="add_button_title">ADD</string>
+    <string name="find_button_title">FIND</string>
+    <string name="delete_button_title">DELETE</string>
 </resources>
