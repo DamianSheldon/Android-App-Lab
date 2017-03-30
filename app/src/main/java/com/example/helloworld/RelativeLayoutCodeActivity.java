@@ -3,13 +3,12 @@ package com.example.helloworld;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 
 public class RelativeLayoutCodeActivity extends AppCompatActivity {
-
-    final int mReminderEditTextId = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +35,7 @@ public class RelativeLayoutCodeActivity extends AppCompatActivity {
 
         // Times spinner
         Spinner timesSpinner = new Spinner(this);
+        timesSpinner.setId(R.id.times);
 
         RelativeLayout.LayoutParams timesSpinnerLayoutParams = new RelativeLayout.LayoutParams(getResources().getDimensionPixelSize(R.dimen.times_spinner_width), ViewGroup.LayoutParams.WRAP_CONTENT);
         timesSpinnerLayoutParams.addRule(RelativeLayout.BELOW, R.id.name);
@@ -44,6 +44,14 @@ public class RelativeLayoutCodeActivity extends AppCompatActivity {
         relativeLayout.addView(timesSpinner, timesSpinnerLayoutParams);
 
         // Done button
+        Button doneButton = new Button(this);
+        doneButton.setText(getString(R.string.done));
+
+        RelativeLayout.LayoutParams doneButtonLayoutParams = new RelativeLayout.LayoutParams(getResources().getDimensionPixelSize(R.dimen.done_button_width), ViewGroup.LayoutParams.WRAP_CONTENT);
+        doneButtonLayoutParams.addRule(RelativeLayout.BELOW, R.id.times);
+        doneButtonLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+
+        relativeLayout.addView(doneButton, doneButtonLayoutParams);
 
         setContentView(relativeLayout);
     }
@@ -60,7 +68,5 @@ public class RelativeLayoutCodeActivity extends AppCompatActivity {
 
         return layoutParams;
     }
-
-
 
 }
