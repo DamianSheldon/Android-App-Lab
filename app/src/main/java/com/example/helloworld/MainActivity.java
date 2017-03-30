@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView mLayoutListView;
 
     // Android supported layouts: Linear Layout, Relative Layout, TableLayout, FragmentLayout, ConstraintLayout, GridLayout
-    private Layouts [] mLayouts = {Layouts.LinearLayoutXML, Layouts.LinearLayoutCode, Layouts.RelativeLayoutXML, Layouts.RelativeLayoutCode, Layouts.TableLayout, Layouts.FragmentLayout, Layouts.ConstraintLayout, Layouts.GridLayout};
+    private Layouts [] mLayouts = {Layouts.LinearLayoutXML, Layouts.LinearLayoutCode, Layouts.RelativeLayoutXML, Layouts.RelativeLayoutCode, Layouts.TableLayout, Layouts.FrameLayout, Layouts.ConstraintLayout, Layouts.GridLayout};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
