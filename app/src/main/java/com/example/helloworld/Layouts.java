@@ -35,6 +35,9 @@ public enum Layouts {
             case TableLayout:
                 mappedClass = TableLayoutActivity.class;
                 break;
+            case GridLayout:
+                mappedClass = GridLayoutActivity.class;
+                break;
             default:
                 break;
         }

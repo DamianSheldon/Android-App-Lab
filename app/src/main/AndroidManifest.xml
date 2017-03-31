@@ -19,7 +19,8 @@
         <activity android:name=".LinearLayoutCodeActivity" />
         <activity android:name=".RelativeLayoutXMLActivity" />
         <activity android:name=".RelativeLayoutCodeActivity" />
-        <activity android:name=".TableLayoutActivity"></activity>
+        <activity android:name=".TableLayoutActivity" />
+        <activity android:name=".GridLayoutActivity"></activity>
     </application>
 
 </manifest>
