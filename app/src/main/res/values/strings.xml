@@ -24,4 +24,8 @@
     <string name="add_button_title">ADD</string>
     <string name="find_button_title">FIND</string>
     <string name="delete_button_title">DELETE</string>
+    
+    <!--FrameLayout-->
+    <string name="framelayout_text_view_text">I\'m a text view with long long content!</string>
+    <string name="framelayout_button_title">I\'m a button!</string>
 </resources>

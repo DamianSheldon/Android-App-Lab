@@ -38,6 +38,10 @@ public enum Layouts {
             case GridLayout:
                 mappedClass = GridLayoutActivity.class;
                 break;
+            case FrameLayout:
+                mappedClass = FrameLayoutActivity.class;
+                break;
+
             default:
                 break;
         }

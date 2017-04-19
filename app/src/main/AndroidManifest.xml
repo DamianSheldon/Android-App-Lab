@@ -20,7 +20,8 @@
         <activity android:name=".RelativeLayoutXMLActivity" />
         <activity android:name=".RelativeLayoutCodeActivity" />
         <activity android:name=".TableLayoutActivity" />
-        <activity android:name=".GridLayoutActivity"></activity>
+        <activity android:name=".GridLayoutActivity" />
+        <activity android:name=".FrameLayoutActivity"></activity>
     </application>
 
 </manifest>
