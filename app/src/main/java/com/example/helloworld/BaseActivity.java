@@ -14,7 +14,7 @@ public class BaseActivity extends AppCompatActivity {
 
         // Setup back indicator
         final ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeAsUpIndicator(R.drawable.ic_action_back);
+        actionBar.setHomeAsUpIndicator(android.support.v7.appcompat.R.drawable.abc_ic_ab_back_material);
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
