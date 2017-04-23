@@ -29,9 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
     // List views
     private ListView mLayoutListView;
+    private ListView mControlListView;
 
-    // Android supported layouts: Linear Layout, Relative Layout, TableLayout, FragmentLayout, ConstraintLayout, GridLayout
-    private Layouts [] mLayouts = {Layouts.LinearLayoutXML, Layouts.LinearLayoutCode, Layouts.RelativeLayoutXML, Layouts.RelativeLayoutCode, Layouts.TableLayout, Layouts.FrameLayout, Layouts.ConstraintLayout, Layouts.GridLayout};
+    // Android supported layouts: Linear Layout, Relative Layout, TableLayout, FragmentLayout,
+    // ConstraintLayout, GridLayout
+    private Layouts [] mLayouts = Layouts.values();
+
+    // Android builtin controls
+    private Controls[] mControls = Controls.values();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,21 +49,11 @@ public class MainActivity extends AppCompatActivity {
         // Set up tab host
         setUpTabHost();
 
-        // Set up list views
-        mLayoutListView = (ListView) findViewById(R.id.layout_list_view);
-        mLayoutListView.setAdapter(new ArrayAdapter<Layouts>(this, android.R.layout.simple_list_item_1, mLayouts));
-        mLayoutListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        // Set up layout list view
+        setUpLayoutListView();
 
-                Class<?> cls = mLayouts[(int)id].mappedClass();
-
-                if (cls != null) {
-                    Intent intent = new Intent(MainActivity.this, cls);
-                    startActivity(intent);
-                }
-            }
-        });
+        // Set up control list view
+        setUpControlListView();
     }
 
     @Override
@@ -112,5 +107,38 @@ public class MainActivity extends AppCompatActivity {
         }
 
         tabHost.setCurrentTabByTag(getString(R.string.tab_bar_layout));
+    }
+
+    private void setUpLayoutListView() {
+        mLayoutListView = (ListView) findViewById(R.id.layout_list_view);
+        mLayoutListView.setAdapter(new ArrayAdapter<Layouts>(this, android.R.layout.simple_list_item_1, mLayouts));
+        mLayoutListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Class<?> cls = mLayouts[(int)id].mappedClass();
+
+                if (cls != null) {
+                    Intent intent = new Intent(MainActivity.this, cls);
+                    startActivity(intent);
+                }
+            }
+        });
+    }
+
+    private void setUpControlListView() {
+        mControlListView = (ListView) findViewById(R.id.control_list_view);
+        mControlListView.setAdapter(new ArrayAdapter<Controls>(this, android.R.layout.simple_list_item_1, mControls));
+        mControlListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Class<?> cls = mControls[(int)id].mappedClass();
+
+                if (cls != null) {
+                    Intent intent = new Intent(MainActivity.this, cls);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }

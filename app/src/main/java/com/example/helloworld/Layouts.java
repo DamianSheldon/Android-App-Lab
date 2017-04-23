@@ -5,7 +5,8 @@ package com.example.helloworld;
  */
 
 public enum Layouts {
-    LinearLayoutXML(0), LinearLayoutCode(1), RelativeLayoutXML(2), RelativeLayoutCode(3), TableLayout(4), FrameLayout(6), ConstraintLayout(7), GridLayout(8);
+    LinearLayoutXML(0), LinearLayoutCode(1), RelativeLayoutXML(2), RelativeLayoutCode(3),
+    TableLayout(4), FrameLayout(6), ConstraintLayout(7), GridLayout(8);
 
     Layouts(int index) {
 

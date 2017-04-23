@@ -4,9 +4,11 @@
     android:layout_height="match_parent"
     android:id="@+id/control">
 
-    <TextView
+    <ListView
+        android:id="@+id/control_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_dark"
-        android:text="@string/tab_bar_control"/>
+        android:layout_height="match_parent">
+
+    </ListView>
+
 </LinearLayout>
