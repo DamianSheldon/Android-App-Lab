@@ -24,8 +24,15 @@
     <string name="add_button_title">ADD</string>
     <string name="find_button_title">FIND</string>
     <string name="delete_button_title">DELETE</string>
-    
+
     <!--FrameLayout-->
     <string name="framelayout_text_view_text">I\'m a text view with long long content!</string>
     <string name="framelayout_button_title">I\'m a button!</string>
+
+    <!--ConstraintLayout-->
+    <string name="anchor_button_title">Anchor</string>
+    <string name="west_north_button_title">West North</string>
+    <string name="west_south_button_title">West South</string>
+    <string name="east_north_button_title">East North</string>
+    <string name="east_south_button_title">East South</string>
 </resources>

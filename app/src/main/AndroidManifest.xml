@@ -21,7 +21,8 @@
         <activity android:name=".RelativeLayoutCodeActivity" />
         <activity android:name=".TableLayoutActivity" />
         <activity android:name=".GridLayoutActivity" />
-        <activity android:name=".FrameLayoutActivity"></activity>
+        <activity android:name=".FrameLayoutActivity" />
+        <activity android:name=".ConstraintLayoutActivity"></activity>
     </application>
 
 </manifest>

@@ -41,8 +41,8 @@ public enum Layouts {
             case FrameLayout:
                 mappedClass = FrameLayoutActivity.class;
                 break;
-
-            default:
+            case ConstraintLayout:
+                mappedClass = ConstraintLayoutActivity.class;
                 break;
         }
 
