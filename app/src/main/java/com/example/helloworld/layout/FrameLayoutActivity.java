@@ -1,7 +1,10 @@
-package com.example.helloworld;
+package com.example.helloworld.layout;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.helloworld.BaseActivity;
+import com.example.helloworld.R;
 
 public class FrameLayoutActivity extends BaseActivity {
 

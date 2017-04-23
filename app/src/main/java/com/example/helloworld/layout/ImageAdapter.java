@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package com.example.helloworld.layout;
 
 import android.content.Context;
 import android.view.View;
@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+
+import com.example.helloworld.R;
 
 /**
  * Created by dongmeiliang on 31/03/2017.

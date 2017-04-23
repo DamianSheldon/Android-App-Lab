@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package com.example.helloworld.layout;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+
+import com.example.helloworld.BaseActivity;
+import com.example.helloworld.R;
 
 public class RelativeLayoutCodeActivity extends BaseActivity {
 

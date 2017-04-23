@@ -3,19 +3,19 @@ package com.example.helloworld;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.example.helloworld.control.Controls;
+import com.example.helloworld.layout.Layouts;
+
 import java.util.HashMap;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Android supported layouts: Linear Layout, Relative Layout, TableLayout, FragmentLayout,
     // ConstraintLayout, GridLayout
-    private Layouts [] mLayouts = Layouts.values();
+    private Layouts[] mLayouts = Layouts.values();
 
     // Android builtin controls
     private Controls[] mControls = Controls.values();

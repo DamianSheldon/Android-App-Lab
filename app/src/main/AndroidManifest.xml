@@ -15,14 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LinearLayoutXMLActivity" />
-        <activity android:name=".LinearLayoutCodeActivity" />
-        <activity android:name=".RelativeLayoutXMLActivity" />
-        <activity android:name=".RelativeLayoutCodeActivity" />
-        <activity android:name=".TableLayoutActivity" />
-        <activity android:name=".GridLayoutActivity" />
-        <activity android:name=".FrameLayoutActivity" />
-        <activity android:name=".ConstraintLayoutActivity" />
+        <activity android:name=".layout.LinearLayoutXMLActivity" />
+        <activity android:name=".layout.LinearLayoutCodeActivity" />
+        <activity android:name=".layout.RelativeLayoutXMLActivity" />
+        <activity android:name=".layout.RelativeLayoutCodeActivity" />
+        <activity android:name=".layout.TableLayoutActivity" />
+        <activity android:name=".layout.GridLayoutActivity" />
+        <activity android:name=".layout.FrameLayoutActivity" />
+        <activity android:name=".layout.ConstraintLayoutActivity" />
         <activity android:name=".BaseActivity"></activity>
     </application>
 

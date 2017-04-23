@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package com.example.helloworld.control;
 
 /**
  * Created by meiliang on 23/04/2017.
