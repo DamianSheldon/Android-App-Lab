@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-public class LinearLayoutCodeActivity extends AppCompatActivity {
+public class LinearLayoutCodeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

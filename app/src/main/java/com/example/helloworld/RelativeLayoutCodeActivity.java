@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 
-public class RelativeLayoutCodeActivity extends AppCompatActivity {
+public class RelativeLayoutCodeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

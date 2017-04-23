@@ -3,7 +3,7 @@ package com.example.helloworld;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class RelativeLayoutXMLActivity extends AppCompatActivity {
+public class RelativeLayoutXMLActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
