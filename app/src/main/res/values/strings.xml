@@ -35,4 +35,8 @@
     <string name="west_south_button_title">West South</string>
     <string name="east_north_button_title">East North</string>
     <string name="east_south_button_title">East South</string>
+
+    <!--Button-->
+    <string name="text_button_title">Alarm</string>
+    <string name="button_greet_message">Hello, I\'m a button</string>
 </resources>

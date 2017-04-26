@@ -18,6 +18,15 @@ public enum Controls {
     public Class<?> mappedClass() {
         Class<?> mappedClass = null;
 
+        switch (this) {
+            case Button:
+                mappedClass = ButtonActivity.class;
+                break;
+
+            default:
+                break;
+        }
+
         return mappedClass;
     }
 }

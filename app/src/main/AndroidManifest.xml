@@ -23,7 +23,8 @@
         <activity android:name=".layout.GridLayoutActivity" />
         <activity android:name=".layout.FrameLayoutActivity" />
         <activity android:name=".layout.ConstraintLayoutActivity" />
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".control.ButtonActivity"></activity>
     </application>
 
 </manifest>
