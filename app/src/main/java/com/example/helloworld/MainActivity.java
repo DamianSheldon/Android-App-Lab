@@ -2,11 +2,13 @@ package com.example.helloworld;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TabHost;
@@ -101,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
 
             ImageView imageView = (ImageView) tabBarItem.findViewById(R.id.item_image_view);
             imageView.setImageResource(mResIdToMenuDrawableId.get(resId));
+
+//            Button button = (Button) tabBarItem.findViewById(R.id.item_button);
+//            button.setText(getString(resId));
+//            button.setCompoundDrawables(null, ContextCompat.getDrawable(this, mResIdToMenuDrawableId.get(resId)), null, null);
 
             tabSpec.setIndicator(tabBarItem);
             tabHost.addTab(tabSpec);

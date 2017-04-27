@@ -39,4 +39,8 @@
     <!--Button-->
     <string name="text_button_title">Alarm</string>
     <string name="button_greet_message">Hello, I\'m a button</string>
+    
+    <!--CheckBox-->
+    <string name="meat">Meat</string>
+    <string name="cheese">Cheese</string>
 </resources>

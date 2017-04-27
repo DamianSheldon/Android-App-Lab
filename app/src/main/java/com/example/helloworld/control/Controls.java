@@ -23,6 +23,10 @@ public enum Controls {
                 mappedClass = ButtonActivity.class;
                 break;
 
+            case CheckBox:
+                mappedClass = CheckBoxActivity.class;
+                break;
+
             default:
                 break;
         }

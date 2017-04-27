@@ -24,7 +24,8 @@
         <activity android:name=".layout.FrameLayoutActivity" />
         <activity android:name=".layout.ConstraintLayoutActivity" />
         <activity android:name=".BaseActivity" />
-        <activity android:name=".control.ButtonActivity"></activity>
+        <activity android:name=".control.ButtonActivity" />
+        <activity android:name=".control.CheckBoxActivity"></activity>
     </application>
 
 </manifest>
