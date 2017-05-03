@@ -31,6 +31,10 @@ public enum Controls {
                 mappedClass = RadioButtonActivity.class;
                 break;
 
+            case ToggleButton:
+                mappedClass = ToggleButtonActivity.class;
+                break;
+
             default:
                 break;
         }
