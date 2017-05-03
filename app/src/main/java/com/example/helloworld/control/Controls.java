@@ -27,6 +27,10 @@ public enum Controls {
                 mappedClass = CheckBoxActivity.class;
                 break;
 
+            case RadioButton:
+                mappedClass = RadioButtonActivity.class;
+                break;
+
             default:
                 break;
         }
