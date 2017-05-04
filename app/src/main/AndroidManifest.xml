@@ -28,7 +28,8 @@
         <activity android:name=".control.CheckBoxActivity" />
         <activity android:name=".control.RadioButtonActivity" />
         <activity android:name=".control.ToggleButtonActivity" />
-        <activity android:name=".control.SpinnerActivity"></activity>
+        <activity android:name=".control.SpinnerActivity" />
+        <activity android:name=".control.PickersActivity"></activity>
     </application>
 
 </manifest>

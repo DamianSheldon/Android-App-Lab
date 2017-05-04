@@ -39,6 +39,11 @@ public enum Controls {
                 mappedClass = SpinnerActivity.class;
                 break;
 
+            case DatePicker:
+            case TimePicker:
+                mappedClass = PickersActivity.class;
+                break;
+
             default:
                 break;
         }

@@ -47,4 +47,8 @@
     <!--RadioButton-->
     <string name="pirates">Pirates</string>
     <string name="ninjas">Ninjas</string>
+
+    <!--Picker-->
+    <string name="pick_time">Pick Time</string>
+    <string name="pick_date">Pick Date</string>
 </resources>
