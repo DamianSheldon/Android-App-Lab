@@ -35,6 +35,10 @@ public enum Controls {
                 mappedClass = ToggleButtonActivity.class;
                 break;
 
+            case Spinner:
+                mappedClass = SpinnerActivity.class;
+                break;
+
             default:
                 break;
         }
