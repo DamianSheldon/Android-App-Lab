@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.example.helloworld.control.Controls;
 import com.example.helloworld.layout.Layouts;
+import com.example.helloworld.network.Networks;
 
 import java.util.HashMap;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     // List views
     private ListView mLayoutListView;
     private ListView mControlListView;
+    private ListView mNetworkListView;
 
     // Android supported layouts: Linear Layout, Relative Layout, TableLayout, FragmentLayout,
     // ConstraintLayout, GridLayout
@@ -39,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
     // Android builtin controls
     private Controls[] mControls = Controls.values();
+
+    // Android support network methods
+    private Networks[] mNetworks = Networks.values();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up control list view
         setUpControlListView();
+
+        setUpNetworkListView();
     }
 
     @Override
@@ -104,10 +111,6 @@ public class MainActivity extends AppCompatActivity {
             ImageView imageView = (ImageView) tabBarItem.findViewById(R.id.item_image_view);
             imageView.setImageResource(mResIdToMenuDrawableId.get(resId));
 
-//            Button button = (Button) tabBarItem.findViewById(R.id.item_button);
-//            button.setText(getString(resId));
-//            button.setCompoundDrawables(null, ContextCompat.getDrawable(this, mResIdToMenuDrawableId.get(resId)), null, null);
-
             tabSpec.setIndicator(tabBarItem);
             tabHost.addTab(tabSpec);
         }
@@ -122,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Class<?> cls = mLayouts[(int)id].mappedClass();
+                Class<?> cls = mLayouts[position].mappedClass();
 
                 if (cls != null) {
                     Intent intent = new Intent(MainActivity.this, cls);
@@ -138,7 +141,23 @@ public class MainActivity extends AppCompatActivity {
         mControlListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Class<?> cls = mControls[(int)id].mappedClass();
+                Class<?> cls = mControls[position].mappedClass();
+
+                if (cls != null) {
+                    Intent intent = new Intent(MainActivity.this, cls);
+                    startActivity(intent);
+                }
+            }
+        });
+    }
+
+    private void setUpNetworkListView() {
+        mNetworkListView =(ListView) findViewById(R.id.network_list_view);
+        mNetworkListView.setAdapter(new ArrayAdapter<Networks>(this, android.R.layout.simple_list_item_1, mNetworks));
+        mNetworkListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Class<?> cls = mNetworks[position].mappedClass();
 
                 if (cls != null) {
                     Intent intent = new Intent(MainActivity.this, cls);

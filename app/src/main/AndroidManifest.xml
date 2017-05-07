@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helloworld">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,7 +32,8 @@
         <activity android:name=".control.RadioButtonActivity" />
         <activity android:name=".control.ToggleButtonActivity" />
         <activity android:name=".control.SpinnerActivity" />
-        <activity android:name=".control.PickersActivity"></activity>
+        <activity android:name=".control.PickersActivity" />
+        <activity android:name=".network.NetworkActivity"></activity>
     </application>
 
 </manifest>
