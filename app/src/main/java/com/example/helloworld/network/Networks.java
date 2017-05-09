@@ -5,7 +5,7 @@ package com.example.helloworld.network;
  */
 
 public enum Networks {
-    HttpsURLConnection, Volley;
+    HttpsURLConnection, Volley, Settings;
 
     @Override
     public String toString() {
@@ -18,6 +18,10 @@ public enum Networks {
         switch (this) {
             case HttpsURLConnection:
                 mappedClass = NetworkActivity.class;
+                break;
+
+            case Settings:
+                mappedClass = SettingsActivity.class;
                 break;
         }
 

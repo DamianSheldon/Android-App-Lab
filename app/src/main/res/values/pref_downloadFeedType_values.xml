@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pref_downloadFeedType_values">
+        <item>@string/pref_downloadFeedType_default</item>
+        <item>@string/pref_downloadFeedType_any_network</item>
+    </array>
+</resources>

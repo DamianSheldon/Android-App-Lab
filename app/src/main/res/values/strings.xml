@@ -60,4 +60,10 @@
     <string name="clear_text">Clear</string>
     <string name="connection_error">Connection error.</string>
     <string name="fetch_cancelled">Fetch cancelled.</string>
+
+    <!--Preferences-->
+    <string name="pref_downloadFeedType">Download Feed</string>
+    <string name="pref_downloadFeedType_default">Wi-Fi</string>
+    <string name="pref_downloadFeedType_any_network">Any network</string>
+    <string name="pref_downloadFeedType_summary">Network connectivity required to download feed.</string>
 </resources>

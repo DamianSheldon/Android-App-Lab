@@ -33,7 +33,13 @@
         <activity android:name=".control.ToggleButtonActivity" />
         <activity android:name=".control.SpinnerActivity" />
         <activity android:name=".control.PickersActivity" />
-        <activity android:name=".network.NetworkActivity"></activity>
+        <activity android:name=".network.NetworkActivity" />
+        <activity android:name=".network.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
