@@ -64,6 +64,10 @@
     <!--Preferences-->
     <string name="pref_downloadFeedType">Download Feed</string>
     <string name="pref_downloadFeedType_default">Wi-Fi</string>
-    <string name="pref_downloadFeedType_any_network">Any network</string>
+    <string name="pref_downloadFeedType_any_network">Any</string>
     <string name="pref_downloadFeedType_summary">Network connectivity required to download feed.</string>
+    <string name="pref_showSummaries">Show Summaries</string>
+    <string name="pref_showSummaries_summary">Show a summary for each link.</string>
+    <string name="wifi_connected">Wi-Fi Connected</string>
+    <string name="lost_connection">Lost Connection</string>
 </resources>

@@ -10,4 +10,9 @@
         android:entryValues="@array/pref_downloadFeedType_values"
         android:defaultValue="@string/pref_downloadFeedType_default" />
 
+    <CheckBoxPreference
+        android:key="pref_showSummaries"
+        android:title="@string/pref_showSummaries"
+        android:summary="@string/pref_showSummaries_summary"/>
+
 </PreferenceScreen>
