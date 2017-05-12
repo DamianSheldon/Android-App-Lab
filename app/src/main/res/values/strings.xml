@@ -70,4 +70,6 @@
     <string name="pref_showSummaries_summary">Show a summary for each link.</string>
     <string name="wifi_connected">Wi-Fi Connected</string>
     <string name="lost_connection">Lost Connection</string>
+
+    <string name="volley_demo_header_title">Volley Demo</string>
 </resources>

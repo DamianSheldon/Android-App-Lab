@@ -7,4 +7,6 @@
 
     <dimen name="times_spinner_width">96dp</dimen>
     <dimen name="done_button_width">96dp</dimen>
+
+    <dimen name="header_title_text_size">32sp</dimen>
 </resources>

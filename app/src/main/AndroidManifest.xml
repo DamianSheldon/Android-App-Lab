@@ -37,9 +37,11 @@
         <activity android:name=".network.SettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".network.VolleyActivity"></activity>
     </application>
 
 </manifest>

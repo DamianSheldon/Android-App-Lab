@@ -20,6 +20,10 @@ public enum Networks {
                 mappedClass = NetworkActivity.class;
                 break;
 
+            case Volley:
+                mappedClass = VolleyActivity.class;
+                break;
+
             case Settings:
                 mappedClass = SettingsActivity.class;
                 break;
