@@ -2,19 +2,18 @@ package com.example.helloworld;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.example.helloworld.control.Controls;
+import com.example.helloworld.data.StorageOption;
 import com.example.helloworld.layout.Layouts;
 import com.example.helloworld.network.Networks;
 
@@ -34,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView mLayoutListView;
     private ListView mControlListView;
     private ListView mNetworkListView;
+    private ListView mDataListView;
 
     // Android supported layouts: Linear Layout, Relative Layout, TableLayout, FragmentLayout,
     // ConstraintLayout, GridLayout
@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Android support network methods
     private Networks[] mNetworks = Networks.values();
+
+    private StorageOption[] mStorageOptions = StorageOption.values();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         setUpControlListView();
 
         setUpNetworkListView();
+
+        setUpDataListView();
     }
 
     @Override
@@ -158,6 +162,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Class<?> cls = mNetworks[position].mappedClass();
+
+                if (cls != null) {
+                    Intent intent = new Intent(MainActivity.this, cls);
+                    startActivity(intent);
+                }
+            }
+        });
+    }
+
+    private void setUpDataListView() {
+        mDataListView = (ListView) findViewById(R.id.data_list_view);
+        mDataListView.setAdapter(new ArrayAdapter<StorageOption>(this, android.R.layout.simple_list_item_1, mStorageOptions));
+        mDataListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Class<?> cls = mStorageOptions[position].mappedClass();
 
                 if (cls != null) {
                     Intent intent = new Intent(MainActivity.this, cls);

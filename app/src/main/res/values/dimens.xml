@@ -9,4 +9,5 @@
     <dimen name="done_button_width">96dp</dimen>
 
     <dimen name="header_title_text_size">32sp</dimen>
+    <dimen name="silent_mode_toggle_button_left_margin">8dp</dimen>
 </resources>

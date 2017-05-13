@@ -42,7 +42,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".network.VolleyActivity" />
-        <activity android:name=".control.TextViewActivity"></activity>
+        <activity android:name=".control.TextViewActivity" />
+        <activity android:name=".data.SharedPreferenceActivity"></activity>
     </application>
 
 </manifest>
