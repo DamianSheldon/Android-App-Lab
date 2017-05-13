@@ -19,6 +19,10 @@ public enum StorageOption {
             case SharedPreferences:
                 mappedClass = SharedPreferenceActivity.class;
                 break;
+
+            case InternalStorage:
+                mappedClass = InternalStorageActivity.class;
+                break;
         }
 
         return mappedClass;

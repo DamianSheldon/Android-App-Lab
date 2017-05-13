@@ -83,4 +83,7 @@ Sed gravida vitae massa ut posuere. Pellentesque habitant morbi tristique senect
 
 Vivamus vitae tortor risus. Vestibulum ac magna mauris. Suspendisse scelerisque lacus sit amet eros interdum venenatis. Sed molestie lobortis lacinia. Nunc quis efficitur eros. Aenean ut venenatis eros. In efficitur, lorem quis placerat sollicitudin, neque mauris gravida nulla, sed facilisis neque purus nec tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi ut volutpat ligula. Duis scelerisque, ipsum ut accumsan faucibus, risus lectus porttitor diam, aliquet luctus ligula neque sit amet lorem. Vivamus ac nunc eros. Cras pharetra risus lectus. Aliquam erat volutpat.</string>
     <string name="silent_mode">Silent Mode</string>
+    <string name="internal_storage_sample_title">Demostrate how to use internal storage, you input content will persistent at internale storage so it can be hold cross session.</string>
+    <string name="internal_storage_input_hint">Say anything that your current want to say!</string>
+    <string name="save_button_title">Save</string>
 </resources>

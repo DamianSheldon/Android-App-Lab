@@ -43,7 +43,8 @@
         </activity>
         <activity android:name=".network.VolleyActivity" />
         <activity android:name=".control.TextViewActivity" />
-        <activity android:name=".data.SharedPreferenceActivity"></activity>
+        <activity android:name=".data.SharedPreferenceActivity" />
+        <activity android:name=".data.InternalStorageActivity"></activity>
     </application>
 
 </manifest>
