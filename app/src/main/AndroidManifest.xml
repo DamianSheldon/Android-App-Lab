@@ -41,7 +41,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".network.VolleyActivity"></activity>
+        <activity android:name=".network.VolleyActivity" />
+        <activity android:name=".control.TextViewActivity"></activity>
     </application>
 
 </manifest>

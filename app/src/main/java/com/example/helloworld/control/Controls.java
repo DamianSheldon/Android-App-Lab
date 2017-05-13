@@ -44,6 +44,10 @@ public enum Controls {
                 mappedClass = PickersActivity.class;
                 break;
 
+            case TextView:
+                mappedClass = TextViewActivity.class;
+                break;
+
             default:
                 break;
         }
