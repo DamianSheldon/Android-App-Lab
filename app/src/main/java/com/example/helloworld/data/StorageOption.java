@@ -23,6 +23,10 @@ public enum StorageOption {
             case InternalStorage:
                 mappedClass = InternalStorageActivity.class;
                 break;
+
+            case ExternalStorage:
+                mappedClass = ExternalStorageActivity.class;
+                break;
         }
 
         return mappedClass;

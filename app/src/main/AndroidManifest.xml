@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -44,7 +45,8 @@
         <activity android:name=".network.VolleyActivity" />
         <activity android:name=".control.TextViewActivity" />
         <activity android:name=".data.SharedPreferenceActivity" />
-        <activity android:name=".data.InternalStorageActivity"></activity>
+        <activity android:name=".data.InternalStorageActivity" />
+        <activity android:name=".data.ExternalStorageActivity"></activity>
     </application>
 
 </manifest>

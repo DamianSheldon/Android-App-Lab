@@ -86,4 +86,8 @@ Vivamus vitae tortor risus. Vestibulum ac magna mauris. Suspendisse scelerisque 
     <string name="internal_storage_sample_title">Demostrate how to use internal storage, you input content will persistent at internale storage so it can be hold cross session.</string>
     <string name="internal_storage_input_hint">Say anything that your current want to say!</string>
     <string name="save_button_title">Save</string>
+    <string name="external_storage_button_title">Save to external storage</string>
+    <string name="external_storage_cannot_write_message">Can\'t write to external storage!</string>
+    <string name="external_storage_no_picture_directory_message">There isn\'t picture directory in external storage!</string>
+    <string name="save_successfully_message">Save to external storage successfully!</string>
 </resources>
